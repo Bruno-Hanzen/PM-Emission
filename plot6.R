@@ -30,6 +30,7 @@ summed$fips<-sub("06037", "Los Angeles", summed$fips)
 summed$fips<-sub("24510", "Baltimore", summed$fips)
 
 png(file=plot6)
+# I used a logarithmic y-axis in order to ease the comparison of the 2 series
 graph<-qplot(year, 
       Emissions,
       data=summed,
